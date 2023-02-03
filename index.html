@@ -1,118 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-
-        <ul class="nav">
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Intro</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/83d94d20d1.css" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
 
-    <div class="section">
-        <div class="item prof">
-            <h2>Adama Ceesay</h2>
-            <img src="img/adu.jpeg" alt="">
+    <!-- portfolio header -->
+    <header>
+       <div class="header-bg">
+        <div class="header">
+            <a href="#index.html" class="logo">AdamaCeesay    </a>
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="item portfolio">
-            <div>
-                <h1>This is a Portfolio website</h1>
-                <p>I am a dedicated, hardworking technology enthusiast, ready to leverage experiences for the next step in my
-                    career. I hold a M.S. in Computer Science Technology and a B.S. in Computer Science. I am motivated to learn
-                    from experienced team members while sharing innovative ideas to solve problems, together with my technical
-                    acumen makes me the ideal candidate in an environment that values personal growth like the Digital Leadership
-                    Development Program Associate.</p>
+       </div>
+            
+            
+    </header> <!-- end of header -->
 
-                <h3>Skills & Abilities</h3>
+    <section id="home" class="s-intro">
+
+        <div class="intro-content">
+
+            <div class="intro-text">
+                <h3>Adama Ceesay</h3>
+                <h1>
+                   Software  <br>
+                    and Web Developer <br>
+                    Based In USA.
+                </h1>
+            </div>
+
+            <div class="intro-pic">
+
+            </div>
+
+        </div> <!-- end row -->
+
+    </section> <!-- end intro -->
+
+    <!-- about section -->
+    <section id="about" class="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>I am a dedicated, hardworking technology enthusiast, ready to leverage experiences for the next step in my career. I hold a M.S. in Computer Science Technology and a B.S. in Computer Science. I am motivated to learn from experienced team members while sharing innovative ideas to solve problems, together with my technical acumen makes me the ideal candidate in an environment that values personal growth.
+
+          </p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS</p>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+              </div>
+          </div>
+
+          <div class="skills">
+            <div class="skill-item">
+              <p>ASP.Net</p>
+            </div>
+            <div class="skill-item">
+              <p>Python</p>
+            </div>
+            <div class="skill-item">
+              <p>MS Office</p>
+            </div>
+            <div class="skill-item">
+                <p>Photoshop</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of about section -->
+
+  
+
+      <!-- educational background -->
+      <section id="education" class="s-edu">
+        <h2 class="edu-background">Educational Background</h2>
+        <div class="edu-container">
+           
+            <div class="edu-content">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                <h1>Kentucky State University</h1>
+                <p>M.S. - Computer Science Technology</p>
+                <p>GPA 3.4</p>
+            </div>
+
+            <div class="edu-content">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                <h1>Code Louisville</h1>
+                <p>Front End Development Program</p>
+                <p>February 2019 – May 2019</p>
+            </div>
+
+            <div class="edu-content">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                <h1>University of The Gambia</h1>
+                <p>B.S. - Computer Science</p>
+                <p>GPA 3.59</p>
+            </div>
+
+        </div>
+          
+      </section>
+
+      <!-- work experience -->
+
+      <section id="experience">
+        <h2 class="work-experience">Work Experience</h2>
+        <div class="exp-container">
+           
+            <div class="exp-content">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                <h1>GE Appliances, a Haier company</h1>
+                <h3>Assembly Line Worker</h3>
+                <p>
+                    This role has allowed me to understand the manufacturing process and drive collaboration with other
+team members. <br>
+As an assembly worker I contribute to the development of the company’s objectives and principles in
+order to achieve production goals. <br>
+Having a clear understanding of the different metrics used by the company system for almost 3 years, I
+was able to put myself through school and learn as much as I could about the way GE Appliances run to
+satisfy customers with quality products. 
+                </p>
+            </div>
+
+            <div class="exp-content">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                <h1>Net Tango</h1>
+                <h3>Junior Web Developer Intern</h3>
+                <p>
+                    Wrote supporting codes to enhance the company’s Intranet using ASP.Net frame work and JavaScript
+functions including the toggle and hide function to incorporate responsive design as well did research to
+compare different Sales Tax API’s to handle state tax for client’s website; I chose Avalara over TaxJar,
+Taxify, Zip-Tax and many other Sale Tax APIs because of its vast capability and efficiency for Real-time
+tax calculation and its regular updates of tax rates and rules lead to more accurate tax calculation for
+millions of products and services. Plus, it is one of the six Certified Service Provider available to
+retailers.
+                </p>
+            </div>
+
+            <div class="exp-content">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                <h1>Internet Society (ISOC) Gambia Chapter</h1>
+                <h3>Technology Administrative Assistant</h3>
+                <p>Computer diagnostic support, troubleshooting and software updates, communication between ISOC
+                    affiliates and the larger body, asset management as well as event coordination;
+                <br>
+                Gamchix: - Been a member of the Gamchix association, I contributed in tutoring over 100
+young girls in basic IT, web literacy, and safe internet browsing, at the same time motivating
+them to take up careers in the IT field. While I server as a source of inspiration for aspiring IT
+professionals, my contribution has helped filled the gender gap in IT for young girls.
+
+                </p>
+            </div>
+
+        </div>
+          
+      </section>
+
+       <!-- gallary -->
+       <section id="gallery" class="s-gallery">
+        <h1>Gallery</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum animi dignissimos dolores culpa quaerat voluptatibus corporis a hic? Vel ipsam reiciendis, cumque
+             ducimus tenetur laboriosam porro consectetur aspernatur voluptatem neque.</p>
+        <div class="row"> 
+            <div class="column">
+              <img src="/images/Pic10.jpg" >
+              <img src="/images/Pic14.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/images/pic2.jpg" style="width:100%">
+                <img src="/images/pic3.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/images/pic3.jpg" style="width:100%">
+                <img src="/images/pic2.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/images/pic4.jpg" style="width:100%">
+                <img src="/images/pic1.jpg" style="width:100%">
+            </div>
+
+            
+            
+          </div>
+      </section>
+
+
+      <!-- contact me -->
+      <section id="contact">
+
+        <h2 class="contact-text">Contact Me</h2>
+        <div class="c-container">
+            <div class="c-content left">
                 <ul>
-                    <li>Java, JavaScript, ASP.Net, R, Python and Front End Development</li>
-                    <li>MS Office, Eclipse, Photoshop, Visual Studio</li>
-                    <li>Excellent Oral and written communication</li>
-                    <li>Fluent in English, Wollof and Fula</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="favorites">
-                <h2>Graduation Pics</h2>
-                <img src="caramelcupcakes.jfif" alt="">
-                <img src="cheesecake.jfif" alt="">
-                <img src="cookiemonstercookies.jfif" alt="">
-                <img src="redvelvetcake.jfif" alt="">
-            </div>
-        </div>
-    </div>
-    
-    <div class="quote">
-        <p>"Always be ready to learn new things"
-            — Rona Simmons.
-        </p>
-    </div>
-<div class="members">
-    <h2>Education History</h2>
-    <div class="staff">
-        <div class="staffMember">
-            <h2><a href="brownies.html">Kentucky State University</a></h2>
-            <p>M.S. - Computer Science Technology - <strong>GPA 3.4</strong>
-            <br>Frankfort, Kentucky - <strong>May 2022</strong>
-            </p>
-            <div class="staffImage">
-                <img src="brownies.jfif" alt="">
-            </div>
-        </div>
-        <div class="staffMember">
-            <h2><a href="donuts.html">Code Louisville</a></h2>
-            <p>Front End Development Program
-                <br>Louisville, KY - <strong>February 2019 - May - 2019</strong>
-            </p>
-            <div class="staffImage">
-                <img src="donuts.jfif" alt="">
-            </div>
-        </div>
-        <div class="staffMember">
-            <h2><a href="macarons.html">University of The Gambia</a></h2>
-            <p>B.S. - Computer Science - <strong>GPA 3.59</strong>
-                <br>Banjul, The Gambia - <strong>March 2018</strong>
-            </p>
-            <div class="staffImage">
-                <img src="macarons.jfif" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-    <footer>
-        <div class="footer-item company-details">
-            <p>My Portfolio &copy; 2023</p>
-        </div>
-        <div class="footer-item footer-contact">
-            <p><img src="img/iconlocation.png" alt="">
-            Louisville, KY 40207
-        </p>
-            <p><img src="img/iconphone.png" alt="">
-                (502)-644-5459
-            </p>
-            <p><img src="img/iconmessages.png" alt="">
-            adugalcsay@gmail.com
-            </p>
-        </div>
-        <div class="footer-item">
-            <h2>Links to social media</h2>
-            <div class="social-media-icons">
-                <img src="img/iconface.png" alt="Facebook">
-                <img src="img/icontwitter.png" alt="Twitter">
-                <img src="img/iconinsta.png" alt="Instagram">
-                <img src="img/iconlinked.png" alt="LinkedIn">
-            </div>
-        </div>
-    </footer>
-</body>
 
+            <div class="c-content mid">
+                <h2><i class="fa-solid fa-envelope"></i>Email: adugalcsay@gmail.com</h2>
+                <h2><i class="fa-solid fa-phone"></i>Tel: (502)-644-5459</h2>
+                <h2><i class="fa-solid fa-location-dot"></i>Address: Louisville, KY 40207</h2>
+                
+            </div>
+            <div class="c-content right">
+                <img src="/images/pic4.jpg" alt="">
+            </div>
+
+        </div>
+        
+      </section>
+
+      <Footer class="footer">All Rights Reserved @ AduGirl, 2023</p></Footer>
+      
+
+
+      <script src="https://kit.fontawesome.com/83d94d20d1.js" crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
