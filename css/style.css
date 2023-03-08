@@ -5,17 +5,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-bg{
-  background-color: #f1f1f1;
-}
-
+/* ------------------menu navigation */
 .header {
   overflow: hidden;
-  /* background-color: #f1f1f1; */
-  padding: 20px 10px;
-  width: 80%;
-  margin: auto;
+  background-color: #f1f1f1;
+  padding:20px 50px;
 }
+
 
 .header a {
   float: left;
@@ -34,32 +30,55 @@ body {
   color: pink;
 }
 
-.header a:hover {
-  background-color: pink;
-  color: white;
-  text-decoration: underline;
-}
-
-.header a.active {
-  background-color:pink;
-  color: white;
-}
-
 .header-right {
   float: right;
 }
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-@media screen and (max-width: 500px) {
-  .header a {
+.header a.active {
+  background-color: pink;
+  color: white;
+}
+
+.header .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header a:not(:first-child) {display: none;}
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header {
+    padding:5px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header.responsive {position: relative;}
+  .header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  
   .header-right {
     float: none;
   }
 }
+
+
+/* -----------------end of menu nav */
+
 
 /* intro */
 .s-intro {
@@ -115,6 +134,18 @@ body {
   margin-top: 0;
 }
 
+@media screen and (max-width: 600px){
+  .intro-text h1 {
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .intro-text h3 {
+    font-size: 25px;
+    line-height: 1.333;
+  }
+}
+
 /* About section */
 .about {
   padding: 30px 0 80px 0;
@@ -166,6 +197,82 @@ body {
   font-size: 18px;
 }
 
+
+@media screen and (max-width: 600px){
+    .skills {
+    /* display: block; */
+  }
+
+  .about p {
+    text-align: left;
+  }
+  
+
+  
+}
+
+/* -----------------Portfolio */
+.portfolio h3{
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-size: 40px;
+}
+
+.portfolio #desc {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+.portfolio_container{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.portfolio_item {
+  width: 33%;
+  padding: 15px;
+  background-color: rgba(207, 200, 201, 0.134);
+  
+  /* margin: 10px; */
+}
+
+.portfolio_item a{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.portfolio_item a:hover{
+  background-color: rgb(58, 57, 57);
+  color: white;
+}
+
+.portfolio_item img{
+  width: 100%;
+  height: 300px;
+}
+
+/* responsive */
+@media screen and (max-width:600px) {
+  .portfolio_container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio_item{
+    width: 100%;
+    text-align: center;
+  } 
+}
+
+
+/* End of Portfolio */
+
 /* Work & Education */
 
 
@@ -213,15 +320,17 @@ body {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
+
+ 
 }
 
 /* Responsive layout */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .column {
     /* -ms-flex: 100%; */
     flex: 100%;
@@ -265,7 +374,21 @@ font-weight: lighter;
 }
 
 /* responsive */
+@media screen and (max-width:600px){
+  .edu-background{
+    font-size: 30px;
+  }
+  
+  .edu-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .edu-content{
+    width: 100%;
+    text-align: center;
+  } 
 
+}
 
 /* work experience */
 
@@ -298,6 +421,17 @@ color: #6f6b6b;
 font-weight: lighter;
 text-align: left;
 line-height: 27px;
+}
+
+/* responsive */
+@media screen and (max-width:600px){
+  .exp-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .exp-content{
+    width: 100%;
+  }
 }
 
 /* contact */
@@ -336,12 +470,11 @@ line-height: 27px;
 }
 .c-content ul li a{
   font-size: 20px;
-
+  text-decoration: none;
   color: black;
 }
 .c-content ul li a:hover {
-  background-color: pink;
-  color: white;
+  color: pink;
   text-decoration: underline;
 }
 .c-content i{
@@ -355,6 +488,12 @@ line-height: 27px;
   height: 200px;
   border-radius: 100%;
   padding: 0;
+}
+/* responsive */
+@media screen and (max-width:600px){
+  .c-content h2{
+    font-size: 18px;
+   }
 }
 
 .footer{

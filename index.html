@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/83d94d20d1.css" crossorigin="anonymous"> -->
-  </head>
+ </head>
   <body>
     <div id="preloader">
         <div id="loader"></div>
@@ -15,7 +13,7 @@
     <!-- portfolio header -->
     <header>
        <div class="header-bg">
-        <div class="header">
+        <div class="header" id="myTopnav">
             <a href="#index.html" class="logo">AdamaCeesay    </a>
             <div class="header-right">
                 <a class="active" href="#home">Home</a>
@@ -24,10 +22,14 @@
                 <a href="#experience">Experience</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
        </div>
-            
+        
+      
             
     </header> <!-- end of header -->
 
@@ -55,7 +57,7 @@
     <!-- about section -->
     <section id="about" class="about">
         <div class="container">
-          <h2>About Me</h2>
+          <h2 id="c">About Me</h2>
           <p>I am a dedicated, hardworking technology enthusiast, ready to leverage experiences for the next step in my career. I hold a M.S. in Computer Science Technology and a B.S. in Computer Science. I am motivated to learn from experienced team members while sharing innovative ideas to solve problems, together with my technical acumen makes me the ideal candidate in an environment that values personal growth.
 
           </p>
@@ -127,6 +129,44 @@
 
         </div>
           
+      </section>
+
+      <!-- portfolio -->
+      <section class="portfolio">
+
+        <h3>My Portfolio</h3>
+        <p id="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sunt voluptatum. 
+        </p>
+        <div class="portfolio_container">
+          
+          <div class="portfolio_item">
+            <img src="images/coperativa.png" alt="">
+            <h2>Project Name</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sunt voluptatum. 
+            </p>
+            <p><a href="#siteLink">Visit Website</a></p>
+          </div>
+
+          <div class="portfolio_item">
+            <img src="images/codeLouisville.png" alt="">
+            <h2>Project Name</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sunt voluptatum. 
+            </p>
+            <p><a href="#siteLink">Visit Website</a></p>
+          </div>
+
+          <div class="portfolio_item">
+            <img src="images/portfolio_site.png" alt="">
+            <h2>Project Name</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sunt voluptatum. 
+            </p>
+            <p><a href="#siteLink">Visit Website</a></p>
+          </div>
+        </div>
       </section>
 
       <!-- work experience -->

@@ -23,3 +23,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+
+// menu navigation
+function responsiveNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
